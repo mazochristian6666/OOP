@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+    
+	public static void main(String[] args)
+	{
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter username: ");
+	String username = sc.next();
+	System.out.println("Enter password: ");
+	String password = sc.next();
+	
+	if(username.length() >=8){
+	    if(username.equals("fcpcstudent1")){
+	        System.out.println("Correct username");
+	        if(password.length() >=8){
+	            if(password.equals("fcpcstudent2019")){
+	                System.out.println("Login Success!");
+	            }
+	            else{
+	                System.out.println("Invalid password!");
+	            }
+	        }
+	        else{
+	            System.out.println("Your password is weak");
+	        }
+	    }
+	    else{
+	        System.out.println("Invalid username!");
+	    }
+	}
+	else{
+	    System.out.println("Your username is weak!");
+	}
+	}
+}
